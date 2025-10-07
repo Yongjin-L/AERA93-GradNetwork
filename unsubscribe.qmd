@@ -1,6 +1,7 @@
 ---
 title: "Unsubscribe"
+resources: index.css
 ---
 
 ```{=html}
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdg3wVP0MjaAUVyrFRzxIDFIdtJGc7zPmOjHyg4wF3F6y40og/viewform?embedded=true" width="150%" height="800" frameborder="0" marginheight="0" marginwidth="0" style="margin-left: -25%; display: block;">Loading…</iframe>
+<iframe class="google-form" src="https://docs.google.com/forms/d/e/1FAIpQLSdg3wVP0MjaAUVyrFRzxIDFIdtJGc7zPmOjHyg4wF3F6y40og/viewform?embedded=true">Loading…</iframe>

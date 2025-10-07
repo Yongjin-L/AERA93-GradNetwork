@@ -5,6 +5,7 @@ project:
 website:
   title: "AERA SIG93 Graduate Network"
   navbar:
+    logo: logo.png
     left:
       - href: index.qmd
         text: "Email List Subscription"

@@ -116,6 +116,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./logo.png" alt="" class="navbar-logo light-content">
+    <img src="./logo.png" alt="" class="navbar-logo dark-content">
     </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">AERA SIG93 Graduate Network</span>
@@ -157,6 +159,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul>
   <li><a href="#aera93-gradnetwork" id="toc-aera93-gradnetwork" class="nav-link active" data-scroll-target="#aera93-gradnetwork">AERA93-GradNetwork</a>
   <ul class="collapse">
+  <li><a href="#purpose" id="toc-purpose" class="nav-link" data-scroll-target="#purpose">Purpose</a></li>
   <li><a href="#project-structure" id="toc-project-structure" class="nav-link" data-scroll-target="#project-structure">Project Structure</a></li>
   <li><a href="#prerequisites" id="toc-prerequisites" class="nav-link" data-scroll-target="#prerequisites">Prerequisites</a></li>
   <li><a href="#common-commands" id="toc-common-commands" class="nav-link" data-scroll-target="#common-commands">Common Commands</a></li>
@@ -175,14 +178,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="aera93-gradnetwork" class="level2">
 <h2 class="anchored" data-anchor-id="aera93-gradnetwork">AERA93-GradNetwork</h2>
-<p>Static site built with Quarto for the AERA93 Graduate Network. This repository contains source <code>.qmd</code> files and the generated site under <code>_site/</code>.</p>
+<p>Static site built with Quarto for the AERA93 Graduate Network. This repository contains source <code>.qmd</code> files and the generated site under <code>docs</code>.</p>
+<section id="purpose" class="level3">
+<h3 class="anchored" data-anchor-id="purpose">Purpose</h3>
+<ul>
+<li>Provide a simple, fast public homepage for the AERA93 Graduate Network</li>
+<li>Share announcements, timelines, and key links in one place</li>
+<li>Collect feedback via the suggestions form (<code>suggestions.qmd</code>)</li>
+<li>Offer an opt-out link for emails via the unsubscribe page (<code>unsubscribe.qmd</code>)</li>
+<li>Serve as a lightweight, version-controlled record of site content</li>
+</ul>
+</section>
 <section id="project-structure" class="level3">
 <h3 class="anchored" data-anchor-id="project-structure">Project Structure</h3>
 <ul>
 <li><code>_quarto.yml</code>: Quarto project/site configuration</li>
 <li><code>index.qmd</code>, <code>suggestions.qmd</code>, <code>unsubscribe.qmd</code>: Source pages</li>
 <li><code>styles.css</code>: Custom styles used by the site</li>
-<li><code>_site/</code>: Rendered output (HTML, assets)</li>
+<li><code>docs/</code>: Rendered output (HTML, assets)</li>
 </ul>
 </section>
 <section id="prerequisites" class="level3">
@@ -197,7 +210,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li><p>Preview the site with live reload:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> preview</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
-<li><p>Render the site to <code>_site/</code>:</p>
+<li><p>Render the site to <code>docs/</code>:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
 </ul>
 </section>
@@ -206,15 +219,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li>Edit <code>.qmd</code> files (e.g., <code>index.qmd</code>) using Markdown and Quarto shortcodes.</li>
 <li>Global settings like theme and navigation live in <code>_quarto.yml</code>.</li>
-<li>Customize styles in <code>styles.css</code> (a copy is also in <code>_site/styles.css</code> but edit the root file).</li>
+<li>Customize styles in <code>styles.css</code> (a copy is also in <code>docs/styles.css</code> but edit the root file).</li>
 </ul>
 </section>
 <section id="deployment" class="level3">
 <h3 class="anchored" data-anchor-id="deployment">Deployment</h3>
-<p>The <code>_site/</code> directory contains the static output and is deployed at GitHub Pages. For GitHub Pages from <code>main</code>:</p>
+<p>The <code>docs/</code> directory contains the static output and is deployed at GitHub Pages. For GitHub Pages from <code>main</code>:</p>
 <ol type="1">
 <li><p>Render locally: <code>quarto render</code></p></li>
-<li><p>Serve <code>_site/</code> via Pages (e.g., set Pages to use the <code>/_site</code> folder from the <code>main</code> branch) or publish with Quarto:</p>
+<li><p>Serve <code>docs/</code> via Pages (e.g., set Pages to use the <code>/docs</code> folder from the <code>main</code> branch) or publish with Quarto:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> publish gh-pages</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
 </ol>
 </section>

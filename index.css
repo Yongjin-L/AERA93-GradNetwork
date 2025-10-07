@@ -1,0 +1,26 @@
+/* Responsive iframe class for Google Forms */
+.google-form {
+    width: 100%;
+    max-width: 100%;
+    border: 0;
+    display: block;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    min-height: 400px;
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .google-form {
+        aspect-ratio: 4 / 3;
+        min-height: 520px;
+    }
+}
+
+/* Phones */
+@media (max-width: 600px) {
+    .google-form {
+        aspect-ratio: 3 / 4;
+        min-height: 640px;
+    }
+}
