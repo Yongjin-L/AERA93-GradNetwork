@@ -1,0 +1,19 @@
+project:
+  type: website
+
+website:
+  title: "AERA SIG93 Graduate Network"
+  navbar:
+    left:
+      - href: index.qmd
+        text: "Email List Subscription"
+      - href: unsubscribe.qmd
+        text: "Unsubscribe"
+      - href: suggestions.qmd
+        text: "Suggestions"
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
