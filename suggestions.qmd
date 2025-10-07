@@ -1,7 +1,10 @@
 ---
 title: "Suggestions"
-resources: index.css
+
+format:
+  html:
+    css: index.css
 ---
 
 ```{=html}
-<iframe class="google-form" src="https://docs.google.com/forms/d/e/1FAIpQLSey_J7Dfi3al5rRDlpyKr4s1hQsuF62HAovfcLcPhQRXyshiw/viewform?embedded=true">Loading…</iframe>
+<iframe class="google-form2" src="https://docs.google.com/forms/d/e/1FAIpQLSey_J7Dfi3al5rRDlpyKr4s1hQsuF62HAovfcLcPhQRXyshiw/viewform?embedded=true">Loading…</iframe>
