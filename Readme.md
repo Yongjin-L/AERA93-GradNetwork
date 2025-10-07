@@ -34,7 +34,7 @@ Static site built with Quarto for the AERA93 Graduate Network. This repository c
 
 ### Deployment
 
-The `_site/` directory contains the static output and can be deployed to any static host (e.g., GitHub Pages, Netlify). For GitHub Pages from `main`:
+The `_site/` directory contains the static output and is deployed at GitHub Pages. For GitHub Pages from `main`:
 
 1. Render locally: `quarto render`
 2. Serve `_site/` via Pages (e.g., set Pages to use the `/_site` folder from the `main` branch) or publish with Quarto:
@@ -48,7 +48,3 @@ The `_site/` directory contains the static output and can be deployed to any sta
 2. Make edits to `.qmd`/`_quarto.yml`/`styles.css`
 3. Run `quarto preview` to verify
 4. Open a pull request
-
-### License
-
-Unless otherwise noted, content is provided under an open content license typical for documentation sites. Update this section with the specific license if required.
