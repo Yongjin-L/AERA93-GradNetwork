@@ -2,9 +2,6 @@ project:
   type: website
   output-dir: docs
 
-  #other website options go here
-google-analytics: G-NCKE112EVM
-
 website:
   title: "AERA SIG93 Graduate Network"
   navbar:
@@ -16,6 +13,7 @@ website:
         text: "Unsubscribe"
       - href: suggestions.qmd
         text: "Suggestions"
+  google-analytics: G-NCKE112EVM  
 
 format:
   html:
