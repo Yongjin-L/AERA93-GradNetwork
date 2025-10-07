@@ -1,13 +1,21 @@
 ## AERA93-GradNetwork
 
-Static site built with Quarto for the AERA93 Graduate Network. This repository contains source `.qmd` files and the generated site under `_site/`.
+Static site built with Quarto for the AERA93 Graduate Network. This repository contains source `.qmd` files and the generated site under `docs`.
+
+### Purpose
+
+- Provide a simple, fast public homepage for the AERA93 Graduate Network
+- Share announcements, timelines, and key links in one place
+- Collect feedback via the suggestions form (`suggestions.qmd`)
+- Offer an opt-out link for emails via the unsubscribe page (`unsubscribe.qmd`)
+- Serve as a lightweight, version-controlled record of site content
 
 ### Project Structure
 
 - `_quarto.yml`: Quarto project/site configuration
 - `index.qmd`, `suggestions.qmd`, `unsubscribe.qmd`: Source pages
 - `styles.css`: Custom styles used by the site
-- `_site/`: Rendered output (HTML, assets)
+- `docs/`: Rendered output (HTML, assets)
 
 ### Prerequisites
 
@@ -21,7 +29,7 @@ Static site built with Quarto for the AERA93 Graduate Network. This repository c
   quarto preview
   ```
 
-- Render the site to `_site/`:
+- Render the site to `docs/`:
   ```bash
   quarto render
   ```
@@ -30,14 +38,14 @@ Static site built with Quarto for the AERA93 Graduate Network. This repository c
 
 - Edit `.qmd` files (e.g., `index.qmd`) using Markdown and Quarto shortcodes.
 - Global settings like theme and navigation live in `_quarto.yml`.
-- Customize styles in `styles.css` (a copy is also in `_site/styles.css` but edit the root file).
+- Customize styles in `styles.css` (a copy is also in `docs/styles.css` but edit the root file).
 
 ### Deployment
 
-The `_site/` directory contains the static output and is deployed at GitHub Pages. For GitHub Pages from `main`:
+The `docs/` directory contains the static output and is deployed at GitHub Pages. For GitHub Pages from `main`:
 
 1. Render locally: `quarto render`
-2. Serve `_site/` via Pages (e.g., set Pages to use the `/_site` folder from the `main` branch) or publish with Quarto:
+2. Serve `docs/` via Pages (e.g., set Pages to use the `/docs` folder from the `main` branch) or publish with Quarto:
    ```bash
    quarto publish gh-pages
    ```
