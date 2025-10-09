@@ -1,24 +1,10 @@
 [
   {
-    "objectID": "unsubscribe.html",
-    "href": "unsubscribe.html",
-    "title": "Unsubscribe",
+    "objectID": "EmailtoFaculty.html",
+    "href": "EmailtoFaculty.html",
+    "title": "AERA SIG93 Graduate Network",
     "section": "",
-    "text": "Loading…"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Graduate Email List Subscription",
-    "section": "",
-    "text": "Loading…"
-  },
-  {
-    "objectID": "suggestions.html",
-    "href": "suggestions.html",
-    "title": "Suggestions",
-    "section": "",
-    "text": "Loading…"
+    "text": "Dear Faculty Advisors,\nI am writing as the graduate representative of AERA SIG93 Research on Learning & Instruction in Physical Education. Graduate Representative to request your help in sharing this link with your graduate students with an interest of physical education and related areas.\nWe are building the AERA SIG93 Graduate Student Network to create a supportive community for connection, resource sharing, and peer support.\nJoining offers students: - Monthly online meetups - Strong peer support system - Chances to shape future SIG programming.\nAll PE graduate students are welcome, regardless of AERA membership.\nHere is the Link\nThank you for supporting our graduate students.\nSincerely,\nYongjin Lee\nAERA SIG93 Graduate Representative\nUniversity of North Carolina at Greensboro"
   },
   {
     "objectID": "Readme.html",
@@ -33,5 +19,26 @@
     "title": "AERA SIG93 Graduate Network",
     "section": "",
     "text": "Static site built with Quarto for the AERA93 Graduate Network. This repository contains source .qmd files and the generated site under docs.\n\n\n\nProvide a simple, fast public homepage for the AERA93 Graduate Network\nShare announcements, timelines, and key links in one place\nCollect feedback via the suggestions form (suggestions.qmd)\nOffer an opt-out link for emails via the unsubscribe page (unsubscribe.qmd)\nServe as a lightweight, version-controlled record of site content\n\n\n\n\n\n_quarto.yml: Quarto project/site configuration\nindex.qmd, suggestions.qmd, unsubscribe.qmd: Source pages\nstyles.css: Custom styles used by the site\ndocs/: Rendered output (HTML, assets)\n\n\n\n\n\nQuarto: install from https://quarto.org\nOptional: Pandoc is bundled with Quarto; no separate install needed\n\n\n\n\n\nPreview the site with live reload:\nquarto preview\nRender the site to docs/:\nquarto render\n\n\n\n\n\nEdit .qmd files (e.g., index.qmd) using Markdown and Quarto shortcodes.\nGlobal settings like theme and navigation live in _quarto.yml.\nCustomize styles in styles.css (a copy is also in docs/styles.css but edit the root file).\n\n\n\n\nThe docs/ directory contains the static output and is deployed at GitHub Pages. For GitHub Pages from main:\n\nRender locally: quarto render\nServe docs/ via Pages (e.g., set Pages to use the /docs folder from the main branch) or publish with Quarto:\nquarto publish gh-pages\n\n\n\n\n\nCreate a branch\nMake edits to .qmd/_quarto.yml/styles.css\nRun quarto preview to verify\nOpen a pull request"
+  },
+  {
+    "objectID": "suggestions.html",
+    "href": "suggestions.html",
+    "title": "Suggestions",
+    "section": "",
+    "text": "Loading…"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Graduate Email List Subscription",
+    "section": "",
+    "text": "Loading…"
+  },
+  {
+    "objectID": "unsubscribe.html",
+    "href": "unsubscribe.html",
+    "title": "Unsubscribe",
+    "section": "",
+    "text": "Loading…"
   }
 ]
