@@ -1,3 +1,14 @@
+/* Responsive iframe class for YouTube videos */
+.youtube-video {
+    width: 80%;
+    max-width: 80%;
+    border: 0;
+    display: block;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    min-height: 315px;
+}
+
 /* Responsive iframe class for Google Forms */
 .google-form {
     width: 100%;
@@ -21,6 +32,11 @@
 
 /* Tablets */
 @media (max-width: 1024px) {
+    .youtube-video {
+        aspect-ratio: 16 / 9;
+        min-height: 315px;
+    }
+
     .google-form {
         aspect-ratio: 4 / 3;
         min-height: 520px;
@@ -34,6 +50,11 @@
 
 /* Phones */
 @media (max-width: 600px) {
+    .youtube-video {
+        aspect-ratio: 16 / 9;
+        min-height: 200px;
+    }
+
     .google-form {
         aspect-ratio: 3 / 4;
         min-height: 640px;

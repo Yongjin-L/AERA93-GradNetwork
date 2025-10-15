@@ -13,6 +13,8 @@ website:
         text: "Unsubscribe"
       - href: suggestions.qmd
         text: "Suggestions"
+      - href: introvideo.qmd
+        text: "Introduction Video"
   google-analytics: G-NCKE112EVM  
 
 format:
