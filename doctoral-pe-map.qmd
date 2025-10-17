@@ -1,0 +1,66 @@
+---
+title: "Doctoral Programs Map"
+format:
+  html:
+    toc: true
+    code-fold: false
+execute:
+  echo: false
+---
+
+```{=html}
+<div style="text-align: left; margin: 20px 0; line-height: 1.6;">
+  <p>This map shows the locations of the doctoral programs in the USA.</p>
+  
+  <p>Find the <a href="https://petedoctoralprograms.weebly.com/" target="_blank" rel="noopener noreferrer">PETE doctoral programs</a> website for more information.</p>
+</div>
+```
+```{python}
+import pandas as pd
+import folium
+from folium.plugins import MarkerCluster
+
+# Load data
+csv_path = "data/universities.csv"
+df = pd.read_csv(csv_path)
+
+# Basic validation to avoid crashes if columns missing
+required = {"name", "website", "latitude", "longitude"}
+missing = required - set(df.columns)
+if missing:
+    raise ValueError(f"CSV missing required columns: {sorted(missing)}")
+
+# Compute initial center (mean) with reasonable fallback
+lat = df["latitude"].dropna()
+lon = df["longitude"].dropna()
+center = [lat.mean() if not lat.empty else 39.5,
+          lon.mean() if not lon.empty else -98.35]
+
+m = folium.Map(location=center, zoom_start=4, tiles="CartoDB positron")
+cluster = MarkerCluster().add_to(m)
+
+for _, row in df.iterrows():
+    if pd.isna(row["latitude"]) or pd.isna(row["longitude"]):
+        continue
+    name = str(row["name"]).strip()
+    url = str(row["website"]).strip()
+    city = str(row.get("city", "")).strip()
+    state = str(row.get("state", "")).strip()
+    loc_line = f"<div>{city}, {state}</div>" if city or state else ""
+    popup_html = f"""
+    <div style='min-width:200px'>
+      <div style='font-weight:600'>{name}</div>
+      {loc_line}
+      <div><a href='{url}' target='_blank' rel='noopener noreferrer'>Website</a></div>
+    </div>
+    """
+    folium.Marker(
+        location=[row["latitude"], row["longitude"]],
+        popup=folium.Popup(popup_html, max_width=300),
+        tooltip=name,
+        icon=folium.Icon(color="blue", icon="graduation-cap", prefix="fa"),
+    ).add_to(cluster)
+
+m
+```
+
