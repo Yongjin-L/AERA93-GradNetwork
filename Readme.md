@@ -2,6 +2,17 @@
 
 Static site built with Quarto for the AERA93 Graduate Network. This repository contains source `.qmd` files and the generated site under `docs`.
 
+### About the Website
+
+The site is the public home for the AERA93 Graduate Network. It shares timely announcements, timelines, events, and key links for members and supporters. Visitors can learn who we are, send suggestions to help improve the network, and opt out of future outreach emails if they prefer.
+
+What you'll find on the site:
+
+- Home: highlights, news, timelines, and important links
+- Who We Are (`whoweare.qmd`): brief overview of the Graduate Network
+- Suggestions (`suggestions.qmd`): simple form to share feedback or ideas
+- Unsubscribe (`unsubscribe.qmd`): quick opt-out for email communications
+
 ### Purpose
 
 - Provide a simple, fast public homepage for the AERA93 Graduate Network
@@ -13,7 +24,7 @@ Static site built with Quarto for the AERA93 Graduate Network. This repository c
 ### Project Structure
 
 - `_quarto.yml`: Quarto project/site configuration
-- `index.qmd`, `suggestions.qmd`, `unsubscribe.qmd`: Source pages
+- `index.qmd`, `whoweare.qmd`, `suggestions.qmd`, `unsubscribe.qmd`: Source pages
 - `styles.css`: Custom styles used by the site
 - `docs/`: Rendered output (HTML, assets)
 
