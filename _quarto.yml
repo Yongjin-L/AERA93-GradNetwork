@@ -13,8 +13,8 @@ website:
         text: "Unsubscribe"
       - href: suggestions.qmd
         text: "Suggestions"
-      ## - href: doctoral-pe-map.qmd
-      ##  text: "Doctoral PE Map"
+      - href: whoweare.qmd
+        text: "Who we are"
   google-analytics: G-NCKE112EVM  
 
 format:
